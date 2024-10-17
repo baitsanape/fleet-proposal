@@ -17,7 +17,7 @@ app.post('/api/send-email', (req, res) => {
 
   const msg = {
     to: 'sales@baitsanape.tech',
-    from: 'rainrock@baitsanape.tech', // Replace with your SendGrid verified sender
+    from: 'info@baitsanape.tech', // Replace with your SendGrid verified sender
     subject,
     text,
   };
