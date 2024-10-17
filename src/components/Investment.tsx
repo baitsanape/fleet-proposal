@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from 'react';
-// Note: react-joyride is causing a findDOMNode deprecation warning.
-// This is a known issue with the library and doesn't affect functionality.
-// Consider replacing with an alternative library if this warning becomes problematic.
-import Joyride, { Step } from 'react-joyride';
+import React, { useState } from 'react';
 import DynamicPricingTable from './DynamicPricingTable';
 
 interface SelectedItem {
@@ -15,35 +11,6 @@ const Investment: React.FC = () => {
   const [totalMonthlyCost, setTotalMonthlyCost] = useState(0);
   const [totalInitialCost, setTotalInitialCost] = useState(0);
   const [selectedItems, setSelectedItems] = useState<SelectedItem[]>([]);
-  const [runTour, setRunTour] = useState(true);
-
-  const steps: Step[] = [
-    {
-      target: '.pricing-calculator',
-      content: 'Welcome to our pricing calculator. Let\'s walk through how to use it.',
-      placement: 'center',
-    },
-    {
-      target: '.select-checkbox',
-      content: 'First, select the items you want to include in your solution.',
-      placement: 'bottom',
-    },
-    {
-      target: '.units-input',
-      content: 'Then, choose the number of units you need for each selected item.',
-      placement: 'bottom',
-    },
-    {
-      target: '.hardware-select',
-      content: 'If applicable, select the hardware option for the item.',
-      placement: 'bottom',
-    },
-    {
-      target: '.cost-breakdown',
-      content: 'Finally, view the cost breakdown here to see your total investment.',
-      placement: 'top',
-    },
-  ];
 
   return (
     <div>
@@ -54,22 +21,6 @@ const Investment: React.FC = () => {
       <p className="mb-4 text-sm font-semibold text-red-600">
         Note: All prices shown below exclude VAT.
       </p>
-      <Joyride
-        steps={steps}
-        run={runTour}
-        continuous
-        showSkipButton
-        styles={{
-          options: {
-            primaryColor: '#3b82f6',
-          },
-        }}
-        callback={(data) => {
-          if (data.status === 'finished' || data.status === 'skipped') {
-            setRunTour(false);
-          }
-        }}
-      />
       <div className="pricing-calculator">
         <DynamicPricingTable 
           setTotalMonthlyCost={setTotalMonthlyCost} 
