@@ -4,12 +4,10 @@ const Cover: React.FC = () => {
   return (
     <div className="text-center">
       <img 
-        src="https://baitsanape.tech/wp-content/uploads/2024/10/rainrock-logo-hz.png" 
+        src="https://i.ytimg.com/vi/5Uv7h9_jqBA/maxresdefault.jpg" 
         alt="RainRock Logo" 
         className="w-64 mx-auto mb-8"
       />
-      <h1 className="text-[1.25rem] font-bold mb-8 cover-h1 text-[#1F2937]">FLEET MANAGEMENT TECHNOLOGY</h1>
-      
       <div className="relative mb-8">
         <img 
           src="https://images.pexels.com/photos/11973732/pexels-photo-11973732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
@@ -21,19 +19,6 @@ const Cover: React.FC = () => {
           <p className="text-lg mb-4 max-w-3xl">
             Embark on a journey of unparalleled efficiency and cost-effectiveness with RainRock's cutting-edge fleet management solutions. Our comprehensive suite of tools is designed to transform your operations, optimize resource allocation, and drive sustainable growth in an ever-evolving industry landscape.
           </p>
-          <p className="text-xl font-semibold mb-4">
-            Powered by RainRock Fleet Management Technology
-          </p>
-          <div className="text-left">
-            <p className="text-lg font-semibold mb-2">Our comprehensive suite of tools include:</p>
-            <ul className="list-disc list-inside">
-              <li>RainRock Track for GPS Telematics</li>
-              <li>RainRock Vision for Video Telematics</li>
-              <li>RainRock Eco Driving for Driver Behaviour</li>
-              <li>RainRock Route Planner for Pick-Up and Delivery Logistics</li>
-              <li>RainRock Scheduling for AI powered employee scheduling</li>
-            </ul>
-          </div>
         </div>
       </div>
 
