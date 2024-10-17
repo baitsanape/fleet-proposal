@@ -8,7 +8,7 @@ const Cover: React.FC = () => {
         alt="RainRock Logo" 
         className="w-64 mx-auto mb-8"
       />
-      <h1 className="text-5xl font-bold mb-8 cover-h1">FLEET MANAGEMENT TECHNOLOGY</h1>
+      <h1 className="text-[1.25rem] font-bold mb-8 cover-h1 text-[#1F2937]">FLEET MANAGEMENT TECHNOLOGY</h1>
       
       <div className="relative mb-8">
         <img 
