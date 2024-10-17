@@ -22,30 +22,30 @@ const initialPricingData: PricingItem[] = [
   { system: 'Project Establishment & Setup', category: 'Set-Up & Configuration', costPerUnit: 7500, units: 10, rateType: 'Once-off' },
   { system: 'System Setup and Configurations', category: 'Set-Up & Configuration', costPerUnit: 15000, units: 10, rateType: 'Once-off' },
   { system: 'Users Setup', category: 'Set-Up & Configuration', costPerUnit: 500, units: 10, rateType: 'Once-off' },
-  { system: 'Control Systems Implementation', category: 'Set-Up & Configuration', costPerUnit: 10000, units: 10, rateType: 'Once-off' },
+  { system: 'Systems Configuration: Sensors calibration etc.', category: 'Set-Up & Configuration', costPerUnit: 10000, units: 10, rateType: 'Once-off' },
   { system: 'Staff Training and Onboarding', category: 'Set-Up & Configuration', costPerUnit: 2000, units: 10, rateType: 'Once-off' },
   { system: 'Go-Live and Initial Monitoring & Notifications', category: 'Set-Up & Configuration', costPerUnit: 5000, units: 10, rateType: 'Once-off' },
   { system: 'Performance Review and Optimization', category: 'Set-Up & Configuration', costPerUnit: 3000, units: 10, rateType: 'Once-off' },
   { system: 'Access Control: Driver ID Readers & Tags', category: 'Capital Expenditure', costPerUnit: 1600, units: 150, rateType: 'Once-off' },
   { system: 'CCTV Monitoring & Notifications Systems', category: 'Capital Expenditure', costPerUnit: 12500, units: 10, rateType: 'Once-off' },
   { system: '24 Hour Call Centre', category: 'Monitoring & Notifications', costPerUnit: 150000, units: 1, rateType: 'Monthly Fee' },
-  { system: 'GPS Telematics', category: 'Monitoring & Notifications', costPerUnit: 249, units: 150, rateType: 'Monthly Fee' },
-  { system: 'Video Telematics', category: 'Monitoring & Notifications', costPerUnit: 499, units: 150, rateType: 'Monthly Fee' },
-  { system: 'Driver Behavior Monitoring & Notifications', category: 'Monitoring & Notifications', costPerUnit: 399, units: 150, rateType: 'Monthly Fee' },
-  { system: 'Pick-Up & Delivery Logistics', category: 'Management', costPerUnit: 499, units: 150, rateType: 'Monthly Fee' },
-  { system: 'Staff Scheduling', category: 'Management', costPerUnit: 149, units: 150, rateType: 'Monthly Fee' },
+  { system: 'GPS Telematics Solution', category: 'Monitoring & Notifications', costPerUnit: 249, units: 150, rateType: 'Monthly Fee' },
+  { system: 'Video Telematics Solution', category: 'Monitoring & Notifications', costPerUnit: 499, units: 150, rateType: 'Monthly Fee' },
+  { system: 'Driver Behavior Monitoring & Notifications Solution', category: 'Monitoring & Notifications', costPerUnit: 399, units: 150, rateType: 'Monthly Fee' },
+  { system: 'Pick-Up & Delivery Logistics Solution', category: 'Management', costPerUnit: 499, units: 150, rateType: 'Monthly Fee' },
+  { system: 'Staff Scheduling Solution', category: 'Management', costPerUnit: 149, units: 150, rateType: 'Monthly Fee' },
   { system: 'Licensing and Fines', category: 'Management', costPerUnit: 299, units: 150, rateType: 'Monthly Fee' },
-  { system: 'Fuel Management', category: 'Management', costPerUnit: 149, units: 150, rateType: 'Monthly Fee' },
-  { system: 'Artisan: Diesel Mechanic', category: 'Maintenance & Repairs', costPerUnit: 750, units: 1, rateType: 'Hourly Rate' },
-  { system: 'Artisan: Auto Electrician', category: 'Maintenance & Repairs', costPerUnit: 850, units: 1, rateType: 'Hourly Rate' },
-  { system: 'Artisan: Vehicle Body Builder', category: 'Maintenance & Repairs', costPerUnit: 700, units: 1, rateType: 'Hourly Rate' },
-  { system: 'Maintenance Assistant: Support Staff', category: 'Maintenance & Repairs', costPerUnit: 500, units: 1, rateType: 'Hourly Rate' },
+  { system: 'Fuel Management Solution', category: 'Management', costPerUnit: 149, units: 150, rateType: 'Monthly Fee' },
+  { system: 'Artisan: Diesel Mechanic', category: 'Maintenance & Repairs', costPerUnit: 750, units: 160, rateType: 'Hourly Rate' },
+  { system: 'Artisan: Auto Electrician', category: 'Maintenance & Repairs', costPerUnit: 850, units: 160, rateType: 'Hourly Rate' },
+  { system: 'Artisan: Vehicle Body Builder', category: 'Maintenance & Repairs', costPerUnit: 700, units: 160, rateType: 'Hourly Rate' },
+  { system: 'Maintenance Assistant: Support Staff', category: 'Maintenance & Repairs', costPerUnit: 500, units: 160, rateType: 'Hourly Rate' },
   { system: 'Markup on outsourced repair & maintenance services', category: 'Maintenance & Repairs', costPerUnit: '20%', units: 1, rateType: 'Percentage' },
   { system: 'Markup on Parts & Consumables', category: 'Maintenance & Repairs', costPerUnit: '20%', units: 1, rateType: 'Percentage' },
   { system: 'Inspection Application', category: 'Monitoring & Notifications', costPerUnit: 99, units: 150, rateType: 'Monthly Fee' },
   { system: 'Annual Vehicle Assessments & Audits with Reports', category: 'Maintenance & Repairs', costPerUnit: 1150000, units: 1, rateType: 'Once-off' },
   { system: 'COT Platform Module License (Ticketing Platform) Per vehicle & Report', category: 'Management', costPerUnit: 299, units: 150, rateType: 'Monthly Fee' },
-  { system: 'Fleet Maintenance Solution', category: 'Management', costPerUnit: 462.50, units: 150, rateType: 'Monthly Fee' },
+  { system: 'Fleet Maintenance Solution', category: 'Management', costPerUnit: 399, units: 150, rateType: 'Monthly Fee' },
   { system: 'Installation of Access Control Systems', category: 'Installation', costPerUnit: 1000, units: 150, rateType: 'Once-off' },
   { system: 'Installation of CCTV Monitoring & Notifications Systems',  category: 'Installation', costPerUnit: 10000, units: 10, rateType: 'Once-off' },
   { system: 'Access Control Systems', category: 'Monitoring & Notifications', costPerUnit: 200, units: 200, rateType: 'Monthly Fee' },
@@ -142,7 +142,7 @@ const DynamicPricingTable: React.FC<DynamicPricingTableProps> = ({ setTotalMonth
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6 text-center">Pricing Calculator</h2>
+      <h2 className="text-2xl font-bold mb-6">Pricing Calculator</h2>
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
