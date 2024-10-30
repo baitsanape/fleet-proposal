@@ -17,8 +17,7 @@ const Cover: React.FC = () => {
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 rounded-lg p-6 text-white">
           <h2 className="text-3xl font-bold mb-4 text-white">Revolutionizing Fleet Management</h2>
           <p className="text-lg mb-4 max-w-3xl">
-            Embark on a journey of unparalleled efficiency and cost-effectiveness with RainRock's cutting-edge fleet management solutions. Our comprehensive suite of tools is designed to transform your operations, optimize resource allocation, and drive sustainable growth in an ever-evolving industry landscape.
-          </p>
+          Unlock new levels of efficiency and cost savings with our advanced fleet management solutions. Our comprehensive suite of services is crafted to optimize vehicle performance, reduce operational costs, and ensure timely maintenance—all contributing to the city’s mission to deliver reliable services for the community. With solutions that cover repairs and maintenance, onboard dashcams for surveillance, ad hoc vehicle rentals, licensing and fine management, and fuel management, RainRock empowers your fleet to operate at peak efficiency, supporting sustainable growth in an ever-evolving industry landscape.          </p>
         </div>
       </div>
 
