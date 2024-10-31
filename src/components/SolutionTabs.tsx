@@ -14,8 +14,7 @@ const solutions = [
       "Geofencing",
       "Vehicle utilization reports",
       "Trip history and playback"
-    ],
-    pricing: "R277.50 per vehicle/month"
+    ]
   },
   {
     icon: <Shield className="w-6 h-6 text-green-600" />,
@@ -28,8 +27,7 @@ const solutions = [
       "Incident detection (harsh braking, speeding)",
       "Automated video uploads to cloud storage",
       "Integration with GPS for location-tagged footage"
-    ],
-    pricing: "R647.50 per vehicle/month"
+    ]
   },
   {
     icon: <BarChart2 className="w-6 h-6 text-purple-600" />,
@@ -42,8 +40,7 @@ const solutions = [
       "Alerts for speeding, harsh braking, and idling",
       "Reporting on driver performance trends",
       "Driver training recommendations based on data"
-    ],
-    pricing: "R185 per driver/month"
+    ]
   },
   {
     icon: <Package className="w-6 h-6 text-red-600" />,
@@ -56,8 +53,7 @@ const solutions = [
       "Route optimization for delivery/pick-up",
       "Proof of delivery and signature capture",
       "Real-time notifications to customers/recipients"
-    ],
-    pricing: "R370 per vehicle/month"
+    ]
   },
   {
     icon: <Calendar className="w-6 h-6 text-indigo-600" />,
@@ -70,8 +66,7 @@ const solutions = [
       "Automated compliance checks for labor laws",
       "Attendance tracking and reporting",
       "Integration with payroll for overtime calculation"
-    ],
-    pricing: "R92.50 per staff member/month"
+    ]
   },
   {
     icon: <DollarSign className="w-6 h-6 text-yellow-600" />,
@@ -84,8 +79,7 @@ const solutions = [
       "Alerts for unusual fuel usage patterns",
       "Monthly fuel efficiency reports",
       "Integration with fuel cards and procurement systems"
-    ],
-    pricing: "R222 per vehicle/month"
+    ]
   },
   {
     icon: <Wrench className="w-6 h-6 text-orange-600" />,
@@ -98,22 +92,19 @@ const solutions = [
       "Maintenance history tracking",
       "Integration with suppliers for parts and services",
       "Real-time alerts for critical repairs or breakdowns"
-    ],
-    pricing: "R462.50 per vehicle/month"
+    ]
   },
   {
     icon: <Lock className="w-6 h-6 text-teal-600" />,
     title: "Access Control & CCTV",
     description: "RFID-based access control and high-definition CCTV cameras for complete premises security and incident tracking.",
     challenges: ["Unauthorized access to premises", "Vehicle theft or misuse", "Lack of visual oversight"],
-    pricing: "R2,000 per system/month"
   },
   {
     icon: <Disc className="w-6 h-6 text-pink-600" />,
     title: "Tyre Management",
     description: "Real-time tyre health monitoring for wear and pressure tracking, with automated alerts for timely replacements.",
     challenges: ["High costs due to frequent tyre damage", "Unsafe vehicle operations"],
-    pricing: "R370 per vehicle/month"
   },
 ];
 
@@ -176,8 +167,6 @@ const SolutionTabs: React.FC = () => {
                 <li key={index} className="text-gray-600">{challenge}</li>
               ))}
             </ul>
-            <h4 className="text-lg font-semibold mb-2">Pricing:</h4>
-            <p className="text-gray-600">{solutions[activeTab].pricing}</p>
           </motion.div>
         </AnimatePresence>
       </div>
